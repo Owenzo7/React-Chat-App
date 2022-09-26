@@ -1,5 +1,10 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import { auth } from "./firebase";
+
+// Firebase Hooks to be imported
+
+import { useAuthState } from "react-firebase-hooks/auth";
 
  const style = {
 
@@ -10,6 +15,11 @@ SectionContainer: `flex flex-col h-[90vh] bg-gray-100 mt-10 shadow-xl border rel
 
 
 function App() {
+
+    const[user] = useAuthState(auth)
+
+    // console.log(user);
+
   return (
     <div className={style.AppContainer}>
       <section className={style.SectionContainer}>
