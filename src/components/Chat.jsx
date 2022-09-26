@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
+import Message from './Message'
 
 
 const style = {
@@ -16,7 +17,7 @@ function Chat() {
     <>
     
     <main className={style.main}>
-    {/* Chat Message Component  */}
+    <Message />
     </main>
 
     {/* Send Message Component */}

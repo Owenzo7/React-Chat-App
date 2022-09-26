@@ -5,6 +5,7 @@ import { auth } from "./firebase";
 // Firebase Hooks to be imported
 
 import { useAuthState } from "react-firebase-hooks/auth";
+import Chat from './components/Chat';
 
  const style = {
 
@@ -28,7 +29,7 @@ function App() {
 
       <Navbar />
       {/* !ChatComponent */}
-
+      <Chat />
        
       </section>
       
