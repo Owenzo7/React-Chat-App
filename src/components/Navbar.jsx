@@ -2,6 +2,7 @@ import React from 'react'
 import { auth } from '../firebase'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import SignIn from './SignIn'
+import LogOut from './LogOut'
 
 
 
@@ -23,9 +24,8 @@ function Navbar() {
         Chat App
        </h1>
 
-       <SignIn />
-        
-        
+        {user ?  <LogOut /> : <SignIn />}
+              
         </div>
   )
 }
