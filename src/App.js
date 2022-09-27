@@ -10,7 +10,7 @@ import Chat from './components/Chat';
  const style = {
 
 AppContainer: `max-w-[728px] mx-auto text-center`,
-SectionContainer: `flex flex-col h-[90vh] bg-gray-100 mt-10 shadow-xl border relative`
+SectionContainer: `flex flex-col h-[170vh] bg-gray-100 mt-10 shadow-xl border relative`
 
  }
 
