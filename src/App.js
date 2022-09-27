@@ -28,8 +28,9 @@ function App() {
       {/* !Navbar */}
 
       <Navbar />
+      {user ? <Chat /> : null}
       {/* !ChatComponent */}
-      <Chat />
+      
        
       </section>
       
